@@ -1,0 +1,77 @@
+<h1 mat-dialog-title class="text-center"><b>{{ this.userData.name }}</b></h1>
+<div mat-dialog-content>
+
+  <div class="text-center">
+    <img  src="../assets/img/avatar1.png" class="img-thumbnail " alt="{{ this.userData.name }}"/>
+  </div>
+  <br/>
+  <h2>Personal Info</h2>
+  <hr/>
+  <div class="table-responsive">
+    <table class="table">
+    <tr>
+      <th>Username:</th>
+      <td>{{ this.userData.username }}</td>
+    </tr>
+    <tr>
+      <th>Phone number:</th>
+      <td>{{ this.userData.phone }}</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td>{{ this.userData.email }}</td>
+    </tr>
+    <tr>
+      <th>Website:</th>
+      <td>{{ this.userData.website }}</td>
+    </tr>
+    </table>
+  </div>
+
+  <h2>Company</h2>
+  <hr/>
+  <div class="table-responsive">
+    <table class="table">
+    <tr>
+      <th>Name:</th>
+      <td>{{ this.userData.company?.name }}</td>
+    </tr>
+    <tr>
+      <th>Catch phrase:</th>
+      <td>{{ this.userData.company?.catchPhrase }}</td>
+    </tr>
+    <tr>
+      <th>Type of business:</th>
+      <td>{{ this.userData.company?.bs }}</td>
+    </tr>
+    </table>
+  </div>
+
+  <h2>Address</h2>
+  <hr/>
+  <div class="table-responsive">
+    <table class="table">
+    <tr>
+      <th>City:</th>
+      <td>{{ this.userData.address?.city }}</td>
+    </tr>
+    <tr>
+      <th>Street:</th>
+      <td>{{ this.userData.address?.street }}</td>
+    </tr>
+    <tr>
+      <th>Suite:</th>
+      <td>{{ this.userData.address?.suite }}</td>
+    </tr>
+    <tr>
+      <th>Zipcode:</th>
+      <td>{{ this.userData.address?.zipcode }}</td>
+    </tr>
+    </table>
+  </div>
+
+</div>
+<hr/>
+<div mat-dialog-actions class="row justify-content-center">
+  <button mat-button class="btn btn-danger" (click)="onCancel()">Close</button>
+</div>

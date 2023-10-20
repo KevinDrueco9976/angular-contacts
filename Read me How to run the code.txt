@@ -1,0 +1,4 @@
+1. Pull the repo in github
+2. Open the folder to vs code
+3. in the terminal type 'npm i'
+4. if success type 'ng s' or 'ng serve'
